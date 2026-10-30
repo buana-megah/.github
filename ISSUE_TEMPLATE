@@ -1,0 +1,58 @@
+name: Engineering Task
+description: Template for technical tasks, refactoring, and feature implementation
+title: "[Task]: "
+labels: ["task"]
+body:
+  - type: textarea
+    id: problems
+    attributes:
+      label: Problems
+      description: Describe the problem, and just to emphasize, not the solution. Elaborate the context as needed.
+      placeholder: What issue or bottleneck are we trying to solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-outcome
+    attributes:
+      label: Expected Outcome
+      description: The definition of done that needs to be achieved by the engineer (or "TBD" if it's unknown).
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical-approach
+    attributes:
+      label: Technical Approach
+      description: Solution or alternatives you've considered, including discussion conclusions (or "TBD" if unknown).
+    validations:
+      required: false
+
+  - type: input
+    id: design-reference
+    attributes:
+      label: Design Reference
+      description: Link to Figma or design specs (leave blank if not applicable).
+      placeholder: https://www.figma.com/file/...
+    validations:
+      required: false
+
+  - type: textarea
+    id: how-to-test
+    attributes:
+      label: How to Test
+      description: Help QA engineers get the bigger picture of how to test the solution. Write "No need to be tested by QA team" if that is the case.
+      placeholder: Steps or criteria for testing (or "No need to be tested by QA team")
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Anything relevant (e.g., Slack links, email threads, documentation, etc.).
+    validations:
+      required: false
